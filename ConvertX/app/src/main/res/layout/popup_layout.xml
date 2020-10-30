@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:background="@drawable/popup_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_popup2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/share"
+        android:textColor="#c4c4c4" />
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView_popup2"
+        android:layout_marginTop="15dp"
+        android:background="#c8c8c8" />
+
+    <ListView
+        android:id="@+id/listView_popup"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_view"
+        android:divider="#d1d1d5" >
+    </ListView>
+
+    <View
+        android:id="@+id/bottom_view"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/listView_popup"
+        android:background="#c8c8c8" />
+
+    <Button
+        android:id="@+id/button_popup"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bottom_view"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="#ff0000"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

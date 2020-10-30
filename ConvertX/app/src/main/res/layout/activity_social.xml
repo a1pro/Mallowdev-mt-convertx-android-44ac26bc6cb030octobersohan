@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#f4f4f4" >
+
+        <Button
+            android:id="@+id/navigation_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/navigation_button" />
+
+        <TextView
+            android:id="@+id/title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/social"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/social_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@+id/title_layout"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/aboutApp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/social_view1"
+        android:background="#f4f4f4" >
+
+        <ImageView
+            android:id="@+id/about_imageView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/icon_about" />
+
+        <ImageView
+            android:id="@+id/taparrow_imageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/right" />
+
+        <TextView
+            android:id="@+id/about_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/about_imageView"
+            android:text="@string/aboutthisapp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/social_view2"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@+id/aboutApp_layout"
+        android:background="#ffffff" />
+
+    <ListView
+        android:id="@+id/social_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/social_view2"
+        android:background="#f4f4f4"
+        android:cacheColorHint="#000000"
+        android:divider="#ffffff"
+        android:dividerHeight="1.5dp"
+        android:focusable="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollingCache="false" >
+    </ListView>
+
+</RelativeLayout>
