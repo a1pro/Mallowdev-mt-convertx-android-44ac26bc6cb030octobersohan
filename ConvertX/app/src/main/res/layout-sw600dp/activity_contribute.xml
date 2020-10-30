@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp" >
+
+        <TextView
+            android:id="@+id/contribute_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/cancel"
+            android:textColor="#037afc"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/contribute"
+            android:textColor="#000000"
+            android:textSize="38dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/title_layout"
+        android:background="#808080" />
+
+    <!--
+<RelativeLayout
+        android:id="@+id/good_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+       >
+        <TextView
+          android:id="@+id/good_textview"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="5dp"
+          android:text="Good" 
+          android:textStyle="bold"
+          android:textSize="14dp"
+          android:textColor="#000000"/>
+    <TextView
+          android:id="@+id/goodcontent_textView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/good_textview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/goodpurchase_button"
+          android:layout_marginTop="3dp"
+          android:textColor="#000000"
+          android:textSize="12dp"
+          android:text="If you find ConvertX useful,support us with this In-App purshase." />
+
+    <Button
+        android:id="@+id/goodpurchase_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Rs 60.00" 
+        android:textSize="12dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/inapppurchase_bg"/>
+
+</RelativeLayout>
+
+        <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/convert_divider_view"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/good_layout"/>
+        
+      <RelativeLayout
+        android:id="@+id/excellent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+       >
+        <TextView
+          android:id="@+id/excellent_textview"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="5dp"
+          android:text="Excellent!" 
+          android:textColor="#000000"
+          android:textSize="14dp"
+          android:textStyle="bold"
+         />
+    <TextView
+          android:id="@+id/excellentcontent_textView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/excellent_textview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/excellentpurchase_button"
+          android:layout_marginTop="3dp"
+          android:textColor="#000000"
+          android:text="If you find ConvertX useful,support us with this In-App purshase." />
+
+    <Button
+        android:id="@+id/excellentpurchase_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Rs 120.00" 
+        android:textSize="12dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/inapppurchase_bg"/>
+
+</RelativeLayout>
+ <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/convert_divider_view"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/excellent_layout"/>
+  <RelativeLayout
+        android:id="@+id/wow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view3"
+       >
+        <TextView
+          android:id="@+id/wow_textview"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="5dp"
+          android:text="Wow!!" 
+          android:textColor="#000000"
+          android:textStyle="bold"/>
+    <TextView
+          android:id="@+id/wowcontent_textView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/wow_textview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/wowpurchase_button"
+          android:layout_marginTop="3dp"
+          android:textColor="#000000"
+          android:text="If you find ConvertX useful,support us with this In-App purshase." />
+
+    <Button
+        android:id="@+id/wowpurchase_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Rs 190.00" 
+        android:textSize="12dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/inapppurchase_bg"/>
+
+</RelativeLayout>
+<View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/convert_divider_view"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/wow_layout"/>
+    -->
+
+    <ListView
+        android:id="@+id/contibute_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:divider="@drawable/convert_divider_view" >
+    </ListView>
+
+</RelativeLayout>

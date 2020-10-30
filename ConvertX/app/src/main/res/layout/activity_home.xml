@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/audio_imageView"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <RelativeLayout
+        android:id="@+id/list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:background="@drawable/convert_divider_view" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/converter_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1" >
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/converter_imageView"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/convert_divider_view" />
+
+            <TextView
+                android:id="@+id/converter_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/converter_imageView"
+                android:text="@string/converter"
+                android:textColor="#000000"
+                android:textSize="24dp" />
+
+            <ImageView
+                android:id="@+id/converter_imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/icon_converter" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/calculator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/converter_layout" >
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/calculator_imageView"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/convert_divider_view" />
+
+            <TextView
+                android:id="@+id/calculator_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/calculator_imageView"
+                android:text="@string/calculator"
+                android:textColor="#000000"
+                android:textSize="24dp" />
+
+            <ImageView
+                android:id="@+id/calculator_imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/icon_calculator" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/favorite_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calculator_layout" >
+
+            <ImageView
+                android:id="@+id/favorites_imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/icon_favorites" />
+
+            <TextView
+                android:id="@+id/favorites_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/favorites_imageView"
+                android:text="@string/favorites"
+                android:textColor="#000000"
+                android:textSize="24dp" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/favorites_imageView"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/convert_divider_view" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/social_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/favorite_layout" >
+
+            <ImageView
+                android:id="@+id/social_imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/icon_social" />
+
+            <TextView
+                android:id="@+id/social_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/social_imageView"
+                android:text="@string/social"
+                android:textColor="#000000"
+                android:textSize="24dp" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/social_imageView"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/convert_divider_view" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

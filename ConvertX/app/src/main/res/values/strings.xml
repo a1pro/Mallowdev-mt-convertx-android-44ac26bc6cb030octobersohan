@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ConvertX</string>
+
+    <!-- Strings for Home Activity -->
+    <string name="converter">Converter</string>
+    <string name="social">Social</string>
+    
+    <!-- String for Calculator Activity -->
+    <string name="calculator">Calculator</string>
+    <string name="defaultValue">0</string>
+    <string name="mplus">m+</string>
+    <string name="mminus">m-</string>
+    <string name="mrecallclear">mrc</string>
+    <string name="plusminus">±</string>
+    <string name="sqrt">√x</string>
+    <string name="modulus">%</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="clear">C</string>
+    <string name="dot">.</string>
+    <string name="multiply">x</string>
+    <string name="divide">÷</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="equalto">=</string>
+
+    <!-- Strings for Social Activity -->
+    <string name="title_activity_social">SocialActivity</string>
+    <string name="appname">Appname</string>
+    <string name="post">Post</string>
+    <string name="share">Share ConvertX</string>
+
+    <!-- Strings for About this App Activity -->
+    <string name="title_activity_about_this_app">AboutThisAppActivity</string>
+    <string name="aboutthisapp">About This App</string>
+    <string name="totalcategories">Total No.of Categories  -  56</string>
+    <string name="totalUnits">Total No.of Units  -  782</string>
+    <string name="applicationName">Application Name:</string>
+    <string name="unitsConverter">ConvertX - Units &amp; Currency Converter</string>
+    <string name="currentVersion">Current Version:</string>
+    <string name="currentVersionno">1.0</string>
+    <string name="category">Category</string>
+    <string name="utilities">Utilities</string>
+    <string name="Language">Language :</string>
+    <string name="English">English</string>
+    <string name="requirements">Requirements</string>
+    <string name="androiddevice">Android 4.0 &amp; Later</string>
+    <string name="sellerDeveloper">Seller / Developer :</string>
+    <string name="developerName">Mallow Technologies Private Limited</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="accuracy">Accuracy of the conversions used in this app are not guaranteed</string>
+    <string name="copyRights">© Mallow Technologies Private Limited</string>
+
+    <!-- Strings for Category List activity -->
+    <string name="acceleration">Acceleration</string>
+    <string name="hintText">Enter the search string</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Strings for Contribute Activity -->
+    <string name="contribute">Contribute</string>
+    <string name="usefulText">If you find convertX useful, support us with this In-App Purchase.</string>
+    <string name="text">text</string>
+    <string name="good">Good</string>
+
+    <!-- Strings for Converter Activity -->
+    <string name="fromUnitValue">Value</string>
+    <string name="fronUnitdesc">Units</string>
+    <string name="swap">swap</string>
+    <string name="exponential">ex(10x)</string>
+
+    <!-- Strings for Favorite Activity -->
+    <string name="favorites">Favorites</string>
+    <string name="delete">Delete</string>
+    <string name="kilomole">kilomole</string>
+    <string name="kilomoleUnit">kmol</string>
+    <string name="mole">mole</string>
+    <string name="moloUnit">mol</string>
+    <string name="noItems">There are no items in your favorites list</string>
+    <string name="favoriteList">In Converter, &quot;Long Press&quot; on the result display to add a conversion to favorites list</string>
+    <string name="Ok">OK</string>
+
+</resources>

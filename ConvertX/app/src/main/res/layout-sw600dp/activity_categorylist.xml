@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/categporytitle_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="#000000" >
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:background="@android:drawable/ic_menu_search" />
+
+        <Button
+            android:id="@+id/uparrow_button"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/up_arrow" />
+
+        <TextView
+            android:id="@+id/categorytitle_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/uparrow_button"
+            android:layout_toRightOf="@+id/search_button"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/acceleration"
+            android:textColor="#ffffff"
+            android:textSize="40dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/search_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/categporytitle_layout"
+        android:layout_toLeftOf="@+id/cancel_button"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:drawablePadding="10dp"
+        android:hint="@string/hintText"
+        android:singleLine="true"
+        android:textSize="22dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/cancel_button"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/search_edittext"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/categporytitle_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/cancel"
+        android:textColor="#000000"
+        android:textSize="22dp"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/categorylist_gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/search_edittext"
+        android:cacheColorHint="@android:color/transparent"
+        android:fadingEdgeLength="10dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"
+        android:requiresFadingEdge="vertical"
+        android:scrollbars="vertical" >
+    </GridView>
+    <!--  -->
+
+</RelativeLayout>

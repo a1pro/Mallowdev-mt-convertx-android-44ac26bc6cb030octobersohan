@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="#f4f4f4" >
+
+    <TextView
+        android:id="@+id/good_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/good"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/goodcontent_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/good_textview"
+        android:layout_below="@+id/good_textview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/goodpurchase_button"
+        android:paddingBottom="10dp"
+        android:text="@string/usefulText"
+        android:textColor="#000000"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/goodpurchase_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/goodcontent_textView"
+        android:layout_alignBottom="@+id/goodcontent_textView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/inapppurchase_bg"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="@string/text"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

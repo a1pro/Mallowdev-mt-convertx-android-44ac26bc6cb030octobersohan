@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--analytics email id : mallowtechnologies@gmail.com-->
+
+    <!-- End current session if app sleeps for a period of time -->
+    <integer name="ga_sessionTimeout">300</integer>
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <string name="ga_trackingId">UA-87913423-1</string>
+
+    <string name="ga_sampleFrequency">100.0</string>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <screenName name="com.mallowtech.convertx.SplashScreenActivity">
+        Splash screen
+    </screenName>
+
+    <screenName name="com.mallowtech.convertx.HomeActivity">
+        Home screen
+    </screenName>
+
+    <screenName name="com.mallowtech.convertx.ConverterActivity">
+        Converter screen
+    </screenName>
+
+    <screenName name="com.mallowtech.convertx.CalculatorActivity">
+        Calculator screen
+    </screenName>
+
+    <screenName name="com.mallowtech.convertx.FavoriteActivity">
+        Favorite screen
+    </screenName>
+
+    <screenName name="com.mallowtech.convertx.SocialActivity">
+        Social screen
+    </screenName>
+
+</resources>
